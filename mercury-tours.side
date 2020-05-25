@@ -157,6 +157,175 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "bad75e34-d1b9-431e-9088-bc3e1a0f10a0",
+    "name": "Register and login with new registered user",
+    "commands": [{
+      "id": "509897a7-ae42-4588-a48d-99b8093ecde6",
+      "comment": "",
+      "command": "open",
+      "target": "http://newtours.demoaut.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ae3245f-fdd4-44e7-82e7-a496964ec5ef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96ccc3c8-5101-45ce-b347-f856ff78e383",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=REGISTER",
+      "targets": [
+        ["linkText=REGISTER", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REGISTER')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mercuryregister.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REGISTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4223a98b-1488-4f62-b0f8-709d65fc0dbc",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//tr[14]/td[2]/input", "xpath:position"]
+      ],
+      "value": "bell"
+    }, {
+      "id": "f4af8233-bda9-487d-9534-9c283bf8f05d",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(15) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[15]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "158fd4f1-9a86-440c-98c5-8b24f118d64b",
+      "comment": "",
+      "command": "click",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(16) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[16]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e694f3-3ca0-474b-844c-6ba2109d6d6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirmPassword",
+      "targets": [
+        ["name=confirmPassword", "name"],
+        ["css=tr:nth-child(16) input", "css:finder"],
+        ["xpath=//input[@name='confirmPassword']", "xpath:attributes"],
+        ["xpath=//tr[16]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "510d75b6-11a4-4c2a-b589-327fa845c637",
+      "comment": "",
+      "command": "click",
+      "target": "name=register",
+      "targets": [
+        ["name=register", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='register']", "xpath:attributes"],
+        ["xpath=//tr[18]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83457aea-458d-4282-bfea-ac7775f55689",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SIGN-OFF",
+      "targets": [
+        ["linkText=SIGN-OFF", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'SIGN-OFF')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mercurysignoff.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SIGN-OFF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad473c25-8ce7-417a-a519-13fda10cefad",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e19f97c-4d6d-43b2-a753-691d7caf7885",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(1) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "bell"
+    }, {
+      "id": "73e9c6b2-7d26-4125-ab42-e648f429a1f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "094de0b0-7c37-4e4d-823b-b99a2a6e2fab",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef93a4b-2c95-4caf-b97d-d75b64a7a29b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=SIGN-ON",
+      "targets": [
+        ["linkText=SIGN-ON", "linkText"],
+        ["css=.mouseOver > a", "css:finder"],
+        ["xpath=//a[contains(text(),'SIGN-ON')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'mercurysignon.php')]", "xpath:href"],
+        ["xpath=//tr[2]/td/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SIGN-ON')]", "xpath:innerText"]
+      ],
+      "value": "SIGN-OFF"
+    }]
   }],
   "suites": [{
     "id": "df7064cb-ba0a-4ed9-bb44-adcd4d7eba3f",
