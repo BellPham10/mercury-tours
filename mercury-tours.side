@@ -1,0 +1,171 @@
+{
+  "id": "fc5a5e8b-aace-410c-b256-8579ff190996",
+  "version": "2.0",
+  "name": "mercury-tours",
+  "url": "http://newtours.demoaut.com/",
+  "tests": [{
+    "id": "6ad68c3e-1f36-4ff4-a4c7-8676f5b55f96",
+    "name": "Login successfully",
+    "commands": [{
+      "id": "11eca99b-1101-4f08-a95c-286f3f7f2bfd",
+      "comment": "",
+      "command": "open",
+      "target": "http://newtours.demoaut.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b59ab690-c08b-42d7-92f5-e7ff9f711d52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "889x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97c147e8-8513-446e-a615-0473360ec68f",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91696a3c-92c4-4f90-940b-81cd1a52589b",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "shopeetest"
+    }, {
+      "id": "c1f5ab97-9bea-4157-9088-4f5a55488554",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Shopee@2020"
+    }, {
+      "id": "0c823fc7-83ac-4168-98c3-ac1d6de37da0",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e680cb7-b200-4649-973a-7c145178c91e",
+      "comment": "Check login successfully",
+      "command": "verifyElementPresent",
+      "target": "css=div:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": "SIGN-OFF"
+    }]
+  }, {
+    "id": "e9d1d148-43a6-4c34-ac1f-3194df1cede2",
+    "name": "Login failed",
+    "commands": [{
+      "id": "c2f54794-20ff-47ac-9d17-cbc662f1af63",
+      "comment": "",
+      "command": "open",
+      "target": "http://newtours.demoaut.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0db2236e-33ad-430b-a427-9a7e1b3114b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "889x788",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf2b7faf-a4f4-4048-b56a-48af6ba4ac51",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3a9354-6b6b-48cb-aa91-d76d8bf96ae6",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "bellpham"
+    }, {
+      "id": "545f7be7-fecf-40b9-82f8-643837cdb8ae",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ffc946a7-aaea-42bd-b6b6-5592ca457cf9",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83ef1e27-5f32-4563-8ee0-11b71951db60",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a:nth-child(2)",
+      "targets": [
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'registration \n        form')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'mercuryregister.php')])[2]", "xpath:href"],
+        ["xpath=//p/font/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "df7064cb-ba0a-4ed9-bb44-adcd4d7eba3f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://newtours.demoaut.com/"],
+  "plugins": []
+}
